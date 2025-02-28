@@ -180,49 +180,49 @@ declare module 'astro:content' {
   slug: "mastering-the-art-of-show-dont-tell";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "art-of-storytelling.md": {
 	id: "art-of-storytelling.md";
   slug: "art-of-storytelling";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "overcoming-writer-s-block-practical-tips-to-get-the-words-flowing.md": {
 	id: "overcoming-writer-s-block-practical-tips-to-get-the-words-flowing.md";
   slug: "overcoming-writer-s-block-practical-tips-to-get-the-words-flowing";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "self-care-for-writers-protecting-your-mind-and-body.md": {
 	id: "self-care-for-writers-protecting-your-mind-and-body.md";
   slug: "self-care-for-writers-protecting-your-mind-and-body";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "setting-realistic-goals-how-to-dream-big-and-still-succeed.md": {
 	id: "setting-realistic-goals-how-to-dream-big-and-still-succeed.md";
   slug: "setting-realistic-goals-how-to-dream-big-and-still-succeed";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "tools-every-writer-needs-from-software-to-notebooks.md": {
 	id: "tools-every-writer-needs-from-software-to-notebooks.md";
   slug: "tools-every-writer-needs-from-software-to-notebooks";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "writing-tips-beginners.md": {
 	id: "writing-tips-beginners.md";
   slug: "writing-tips-beginners";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
 "stories": {
@@ -231,91 +231,63 @@ declare module 'astro:content' {
   slug: "cyber-shinobi";
   body: string;
   collection: "stories";
-  data: any
+  data: InferEntrySchema<"stories">
 } & { render(): Render[".md"] };
 "love-in-the-lemon-grove/chapter-1.md": {
 	id: "love-in-the-lemon-grove/chapter-1.md";
   slug: "love-in-the-lemon-grove/chapter-1";
   body: string;
   collection: "stories";
-  data: any
+  data: InferEntrySchema<"stories">
 } & { render(): Render[".md"] };
 "love-in-the-lemon-grove/chapter-2.md": {
 	id: "love-in-the-lemon-grove/chapter-2.md";
   slug: "love-in-the-lemon-grove/chapter-2";
   body: string;
   collection: "stories";
-  data: any
+  data: InferEntrySchema<"stories">
 } & { render(): Render[".md"] };
 "love-in-the-lemon-grove/chapter-3.md": {
 	id: "love-in-the-lemon-grove/chapter-3.md";
   slug: "love-in-the-lemon-grove/chapter-3";
   body: string;
   collection: "stories";
-  data: any
+  data: InferEntrySchema<"stories">
 } & { render(): Render[".md"] };
 "love-in-the-lemon-grove/chapter-4.md": {
 	id: "love-in-the-lemon-grove/chapter-4.md";
   slug: "love-in-the-lemon-grove/chapter-4";
   body: string;
   collection: "stories";
-  data: any
+  data: InferEntrySchema<"stories">
 } & { render(): Render[".md"] };
 "love-in-the-lemon-grove/chapter-5.md": {
 	id: "love-in-the-lemon-grove/chapter-5.md";
   slug: "love-in-the-lemon-grove/chapter-5";
   body: string;
   collection: "stories";
-  data: any
+  data: InferEntrySchema<"stories">
 } & { render(): Render[".md"] };
 "love-in-the-lemon-grove/index.md": {
 	id: "love-in-the-lemon-grove/index.md";
   slug: "love-in-the-lemon-grove";
   body: string;
   collection: "stories";
-  data: any
+  data: InferEntrySchema<"stories">
 } & { render(): Render[".md"] };
 "seeds-of-redemption.md": {
 	id: "seeds-of-redemption.md";
   slug: "seeds-of-redemption";
   body: string;
   collection: "stories";
-  data: any
-} & { render(): Render[".md"] };
-"the-dragons-crown/chapter-1.md": {
-	id: "the-dragons-crown/chapter-1.md";
-  slug: "the-dragons-crown/chapter-1";
-  body: string;
-  collection: "stories";
-  data: any
-} & { render(): Render[".md"] };
-"the-dragons-crown/chapter-2.md": {
-	id: "the-dragons-crown/chapter-2.md";
-  slug: "the-dragons-crown/chapter-2";
-  body: string;
-  collection: "stories";
-  data: any
-} & { render(): Render[".md"] };
-"the-dragons-crown/chapter-3.md": {
-	id: "the-dragons-crown/chapter-3.md";
-  slug: "the-dragons-crown/chapter-3";
-  body: string;
-  collection: "stories";
-  data: any
-} & { render(): Render[".md"] };
-"the-dragons-crown/index.md": {
-	id: "the-dragons-crown/index.md";
-  slug: "the-dragons-crown";
-  body: string;
-  collection: "stories";
-  data: any
+  data: InferEntrySchema<"stories">
 } & { render(): Render[".md"] };
 "the-last-night.md": {
 	id: "the-last-night.md";
   slug: "the-last-night";
   body: string;
   collection: "stories";
-  data: any
+  data: InferEntrySchema<"stories">
 } & { render(): Render[".md"] };
 };
 
@@ -329,5 +301,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }
