@@ -2,23 +2,38 @@ name: Deploy to HostGator
 
 on:
   push:
-    branches:
-      - main  # Change to your deployment branch
+    branches: [ main ]
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
+      # Step 1: Check out your code
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Deploy via FTP
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
-      with:
-        server: ${{ secrets.FTP_HOST }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        port: ${{ secrets.FTP_PORT }}
-        local-dir: ./dist/
-        server-dir: ${{ secrets.REMOTE_PATH }}
+      # Step 2: Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # Step 4: Build the project (adjust if you're using a different build command)
+      - name: Build
+        run: npm run build
+
+      # Step 5: Deploy via FTP
+      # Using SamKirkland/FTP-Deploy-Action as an example:
+      - name: Deploy to HostGator via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.REMOTE_PATH }}
