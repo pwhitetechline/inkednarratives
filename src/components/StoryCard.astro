@@ -1,0 +1,59 @@
+---
+interface Props {
+  title: string;
+  excerpt: string;
+  author: string;
+  membershipRequired: boolean;
+  slug: string;
+  category: string;
+  genre: string[];
+  tags: string[];
+}
+
+const { title, excerpt, author, membershipRequired, slug, category, genre, tags } = Astro.props;
+---
+
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+  <div class="p-6">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded">
+        {category}
+      </span>
+      {genre.map(g => (
+        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">
+          {g}
+        </span>
+      ))}
+    </div>
+
+    <h3 class="text-xl font-semibold mb-2">{title}</h3>
+    <p class="text-gray-600 mb-4">{excerpt}</p>
+    
+    <div class="flex flex-wrap gap-2 mb-4">
+      {tags.map(tag => (
+        <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">
+          #{tag}
+        </span>
+      ))}
+    </div>
+
+    <div class="flex justify-between items-center">
+      <span class="text-gray-500">By {author}</span>
+      {membershipRequired ? (
+        <span class="text-sm font-medium px-3 py-1 bg-amber-100 text-amber-800 rounded-full">
+          Members Only
+        </span>
+      ) : (
+        <span class="text-sm font-medium px-3 py-1 bg-green-100 text-green-800 rounded-full">
+          Free
+        </span>
+      )}
+    </div>
+    <a
+      href={`/stories/${slug}`}
+      class="mt-4 block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
+    >
+      Read Story
+    </a>
+  </div>
+</div>

@@ -1,0 +1,159 @@
+---
+import type { GetStaticPaths, InferGetStaticParamsType, InferGetStaticPropsType } from 'astro';
+import type { CollectionEntry } from 'astro:content';
+import PageWithSidebar from '../../layouts/PageWithSidebar.astro';
+import { getCollection } from 'astro:content';
+import { formatDate } from '../../utils/date';
+
+type Props = {
+  story: CollectionEntry<'stories'>;
+};
+
+export const getStaticPaths = (async () => {
+  const stories = await getCollection('stories');
+  return stories.map((story) => {
+    const segments = story.id.split('/');
+    
+    if (segments.length === 1) {
+      // For single-file stories (not in a directory)
+      return {
+        params: { 
+          slug: segments[0].replace(/\.md$/, '')
+        },
+        props: { story }
+      };
+    } else {
+      // For stories in directories
+      const storyDir = segments[0];
+      const fileName = segments[segments.length - 1].replace(/\.md$/, '');
+      
+      if (fileName === 'index') {
+        // For index.md files in directories
+        return {
+          params: { 
+            slug: storyDir
+          },
+          props: { story }
+        };
+      } else {
+        // For non-index files in directories
+        return {
+          params: { 
+            slug: `${storyDir}/${fileName}`
+          },
+          props: { story }
+        };
+      }
+    }
+  });
+}) as unknown as GetStaticPaths;
+
+const { story } = Astro.props as Props;
+const { Content } = await story.render();
+
+// Get all chapters if this is a multi-part story
+let chapters: { title: string; url: string }[] = [];
+
+// Get all stories and find chapters
+const allStories = await getCollection('stories');
+const currentStoryDir = story.id.split('/')[0];
+
+const matchingStories = allStories
+  .filter(s => s.id.startsWith(`${currentStoryDir}/`))
+  .filter(s => s.id.includes('chapter-'));
+
+chapters = matchingStories
+  .sort((a, b) => {
+    const aNum = parseInt(a.id.match(/chapter-(\d+)/)?.[1] || '0');
+    const bNum = parseInt(b.id.match(/chapter-(\d+)/)?.[1] || '0');
+    return aNum - bNum;
+  })
+  .map(chapter => ({
+    title: chapter.data.title,
+    url: `/stories/${currentStoryDir}/${chapter.id.split('/').pop()?.replace('.md', '')}`
+  }));
+
+// Get story navigation if it's a multi-part story
+const storyNav = story.data.isMultiPart ? {
+  current: story.data.partNumber || 0,
+  total: story.data.totalParts || 1,
+  prev: story.data.previousPart,
+  next: story.data.nextPart
+} : null;
+---
+
+<PageWithSidebar title={`${story.data.title} - StoryStore`}>
+  <article class="prose lg:prose-xl mx-auto">
+    <img 
+      src={story.data.image} 
+      alt={story.data.title}
+      class="w-full h-[400px] object-cover rounded-lg mb-8"
+    />
+    
+    <div class="flex justify-between items-center mb-8">
+      <h1 class="text-4xl font-serif font-bold text-gray-900 m-0">
+        {story.data.title}
+      </h1>
+      {story.data.membershipRequired ? (
+        <span class="text-lg font-medium px-4 py-2 bg-amber-100 text-amber-800 rounded-full">
+          Members Only
+        </span>
+      ) : (
+        <span class="text-lg font-medium px-4 py-2 bg-green-100 text-green-800 rounded-full">
+          Free
+        </span>
+      )}
+    </div>
+    
+    <div class="flex items-center text-gray-500 mb-8">
+      <span class="mr-4">{story.data.author}</span>
+      <time datetime={story.data.date}>{formatDate(story.data.date)}</time>
+    </div>
+
+    {chapters.length > 0 && (
+      <div class="mb-8 bg-gray-50 p-6 rounded-lg">
+        <h2 class="text-2xl font-bold mb-4">Table of Contents</h2>
+        <nav class="flex flex-col space-y-1">
+          {!story.id.endsWith('/index.md') && (
+            <a 
+              href={`/stories/${currentStoryDir}`}
+              class="text-blue-600 hover:text-blue-800 font-medium mb-4"
+            >
+              ← Back to Story Overview
+            </a>
+          )}
+          <div class="space-y-2">
+            {chapters.map((chapter) => (
+              <a 
+                href={chapter.url}
+                class={`block px-4 py-.5 rounded-lg transition-colors ${
+                  story.id === `${currentStoryDir}/${chapter.url.split('/').pop()}.md`
+                    ? 'bg-blue-50 border-2 border-blue-200'
+                    : 'hover:bg-gray-100'
+                }`}
+              >
+                <div class="font-medium text-gray-900">
+                  {chapter.title}
+                </div>
+              </a>
+            ))}
+          </div>
+        </nav>
+      </div>
+    )}
+    
+    <div class="text-gray-700">
+      <Content />
+    </div>
+
+    {story.data.membershipRequired && (
+      <div class="mt-8 bg-amber-50 border border-amber-200 rounded-lg p-6 text-center">
+        <h3 class="text-xl font-bold text-amber-800 mb-2">Members Only Content</h3>
+        <p class="text-amber-700 mb-4">Join our membership to read this story and many more!</p>
+        <a href="/membership" class="inline-block bg-amber-600 text-white py-3 px-6 rounded-lg hover:bg-amber-700 transition-colors">
+          Become a Member
+        </a>
+      </div>
+    )}
+  </article>
+</PageWithSidebar>

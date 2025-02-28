@@ -1,0 +1,13 @@
+---
+interface Props {
+  slot?: string;
+  className?: string;
+}
+
+const { slot = 'sidebar-1', className = '' } = Astro.props;
+---
+<div class={`bg-gray-100 rounded-lg p-4 mb-6 ${className}`}>
+  <div class="text-center text-gray-500 text-sm">
+    Advertisement Slot: {slot}
+  </div>
+</div>

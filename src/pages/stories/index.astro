@@ -1,0 +1,230 @@
+---
+import PageWithSidebar from '../../layouts/PageWithSidebar.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import { getCollection } from 'astro:content';
+
+// Get all stories and filter out chapter files
+const allStories = await getCollection('stories');
+const stories = allStories.filter(story => {
+  return !story.id.includes('/chapter-');
+});
+
+const sortedStories = stories.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+// Get unique categories, genres, and tags
+const categories = [...new Set(stories.map(story => story.data.category?.toString() || ''))].filter(Boolean);
+const genres = [...new Set(stories.flatMap(story => {
+  const genre = story.data.genre;
+  return Array.isArray(genre) ? genre.map(g => g.toString()) : [genre?.toString() || ''];
+}))].filter(Boolean);
+const tags = [...new Set(stories.flatMap(story => {
+  const tags = story.data.tags;
+  return Array.isArray(tags) ? tags.map(t => t.toString()) : [tags?.toString() || ''];
+}))].filter(Boolean);
+
+// Get filter values from URL
+const { searchParams } = Astro.url;
+const selectedCategory = searchParams.get('category');
+const selectedGenre = searchParams.get('genre');
+const selectedTag = searchParams.get('tag');
+---
+
+<PageWithSidebar title="Stories - StoryStore">
+  <div class="mb-12">
+    <h1 class="text-4xl font-serif font-bold text-gray-900 mb-8">Stories</h1>
+    
+    <div class="bg-purple-50 border border-purple-100 rounded-xl p-6">
+      <h2 class="text-lg font-semibold text-purple-900 mb-4 flex items-center">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+        </svg>
+        Filter Stories
+      </h2>
+      
+      <form id="filter-form" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Category Filter -->
+        <div class="bg-white rounded-lg p-4 shadow-sm">
+          <label for="category" class="block text-sm font-medium text-purple-900 mb-2">Category</label>
+          <select
+            id="category"
+            name="category"
+            class="mt-1 block w-full rounded-md border-gray-300 focus:border-purple-500 focus:ring-purple-500"
+          >
+            <option value="">All Categories</option>
+            {categories.map(category => (
+              <option value={category} selected={category === selectedCategory ? '' : undefined}>{category}</option>
+            ))}
+          </select>
+        </div>
+
+        <!-- Genre Filter -->
+        <div class="bg-white rounded-lg p-4 shadow-sm">
+          <label for="genre" class="block text-sm font-medium text-purple-900 mb-2">Genre</label>
+          <select
+            id="genre"
+            name="genre"
+            class="mt-1 block w-full rounded-md border-gray-300 focus:border-purple-500 focus:ring-purple-500"
+          >
+            <option value="">All Genres</option>
+            {genres.map(genre => (
+              <option value={genre} selected={genre === selectedGenre ? '' : undefined}>{genre}</option>
+            ))}
+          </select>
+        </div>
+
+        <!-- Tags Filter -->
+        <div class="bg-white rounded-lg p-4 shadow-sm">
+          <label for="tag" class="block text-sm font-medium text-purple-900 mb-2">Tags</label>
+          <select
+            id="tag"
+            name="tag"
+            class="mt-1 block w-full rounded-md border-gray-300 focus:border-purple-500 focus:ring-purple-500"
+          >
+            <option value="">All Tags</option>
+            {tags.map(tag => (
+              <option value={tag} selected={tag === selectedTag ? '' : undefined}>{tag}</option>
+            ))}
+          </select>
+        </div>
+      </form>
+
+      {(selectedCategory || selectedGenre || selectedTag) && (
+        <div class="mt-4 flex items-center justify-between">
+          <div class="flex flex-wrap gap-2">
+            {selectedCategory && (
+              <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">
+                Category: {selectedCategory}
+              </span>
+            )}
+            {selectedGenre && (
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
+                Genre: {selectedGenre}
+              </span>
+            )}
+            {selectedTag && (
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">
+                Tag: {selectedTag}
+              </span>
+            )}
+          </div>
+          <button
+            id="clear-filters"
+            type="button"
+            class="text-sm text-purple-600 hover:text-purple-900"
+          >
+            Clear Filters
+          </button>
+        </div>
+      )}
+    </div>
+  </div>
+  
+  <div id="stories-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {sortedStories.map((story) => (
+      <div class="story-card" 
+        data-category={story.data.category}
+        data-genres={JSON.stringify(story.data.genre)}
+        data-tags={JSON.stringify(story.data.tags)}
+      >
+        <StoryCard 
+          title={story.data.title}
+          excerpt={story.data.excerpt}
+          author={story.data.author}
+          membershipRequired={story.data.membershipRequired}
+          slug={story.slug}
+          category={story.data.category}
+          genre={story.data.genre}
+          tags={story.data.tags}
+        />
+      </div>
+    ))}
+  </div>
+</PageWithSidebar>
+
+<script>
+  function filterStories() {
+    const category = document.getElementById('category').value;
+    const genre = document.getElementById('genre').value;
+    const tag = document.getElementById('tag').value;
+    
+    console.log('Filtering with:', { category, genre, tag });
+    
+    const storyCards = document.querySelectorAll('.story-card');
+    
+    storyCards.forEach(card => {
+      const cardCategory = card.dataset.category;
+      const cardGenres = JSON.parse(card.dataset.genres);
+      const cardTags = JSON.parse(card.dataset.tags);
+      
+      console.log('Story:', {
+        title: card.querySelector('h3').textContent,
+        category: cardCategory,
+        genres: cardGenres,
+        tags: cardTags
+      });
+      
+      let visible = true;
+      
+      if (category && cardCategory !== category) {
+        visible = false;
+      }
+      
+      if (genre && visible) {
+        visible = Array.isArray(cardGenres) 
+          ? cardGenres.map(g => g.toLowerCase()).includes(genre.toLowerCase())
+          : cardGenres?.toLowerCase() === genre.toLowerCase();
+      }
+      
+      if (tag && visible) {
+        visible = Array.isArray(cardTags)
+          ? cardTags.map(t => t.toLowerCase()).includes(tag.toLowerCase())
+          : cardTags?.toLowerCase() === tag.toLowerCase();
+      }
+      
+      console.log('Visible?', visible);
+      card.style.display = visible ? 'block' : 'none';
+    });
+  }
+
+  // Add change handlers to all select elements
+  document.querySelectorAll('#filter-form select').forEach(select => {
+    select.addEventListener('change', (event) => {
+      const form = event.target.form;
+      const formData = new FormData(form);
+      
+      // Build the query string
+      const params = new URLSearchParams();
+      for (const [key, value] of formData.entries()) {
+        if (value) {
+          params.set(key, value);
+        }
+      }
+      
+      // Update URL without reload
+      const newUrl = `${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`;
+      window.history.pushState({}, '', newUrl);
+      
+      // Filter stories
+      filterStories();
+    });
+  });
+
+  // Handle clear filters button
+  document.getElementById('clear-filters')?.addEventListener('click', () => {
+    // Reset form
+    document.getElementById('filter-form').reset();
+    
+    // Clear URL parameters
+    window.history.pushState({}, '', window.location.pathname);
+    
+    // Show all stories
+    document.querySelectorAll('.story-card').forEach(card => {
+      card.style.display = 'block';
+    });
+  });
+
+  // Initial filter on page load
+  if (window.location.search) {
+    filterStories();
+  }
+</script>

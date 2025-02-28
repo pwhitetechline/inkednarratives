@@ -1,0 +1,154 @@
+---
+title: "Cyber Shinobi"
+excerpt: "Kenzo opened his eyes, his senses screaming at him. The chill of the bamboo forest was gone. In its place, an artificial glow bathed a city of towering metal monoliths, their surfaces pulsing with lights like distant stars. The air was thick with the scent of chemicals, the hum of unseen machines vibrating through his bones. His katana was missing. His clothes were unfamiliar. And the language—fractured voices drifting through the streets—was one he barely understood. This was not Japan. This was not his world."
+author: "Patrick White"
+date: "2025-02-27"
+image: "/images/stories/cyber-shinobi-banner-image.webp"
+category: "Fiction"
+genre:
+  [
+    "Science Fiction",
+    "Cyberpunk",
+    "Time Travel",
+    "Action-Adventure",
+    "Dystopian Thriller",
+  ]
+tags:
+  [
+    "Cyberpunk",
+    "Time Travel",
+    "Ninja",
+    "Sci-Fi Action",
+    "Dystopian Future",
+    "Alternate History",
+    "Espionage",
+    "Survival",
+    "Temporal Paradox",
+    "Found Family",
+  ]
+isMultiPart: false
+storyDir: "cyber-shinobi"
+membershipRequired: false
+---
+
+The last thing Kenzo remembered was the bone-jarring impact of the exploding powder charge. One moment, he had been poised on the precipice, ready to unleash the smoke bomb concealing his retreat; the next, a blinding white light had engulfed him, followed by a sensation like being torn apart and reassembled, not quite as he had been. He’d trained his entire life for moments like these: moments of chaos when survival was the only measure of a man. Here, however, the old lessons felt useless, as unfamiliar as the ground beneath his feet.
+
+Kenzo opened his eyes, his senses screaming at him. Gone was the familiar chill of the bamboo forest, the smell of damp earth and pine. He lay instead on something hard and smooth, illuminated by an oppressive, artificial light that seemed to seep from the very air itself. Metallic structures, taller than any mountain, pierced the bruised, almost purple sky, their surfaces alive with a network of flashing lights. The air was a noxious brew of strange chemicals and the low hum of machinery. This was not Japan, not any Japan he knew.
+
+He pushed himself up, his muscles screaming in protest as he took in the scene. He was no longer wearing his traditional black gi; it was replaced with some sort of seamless grey material. His tabi boots had been traded for what felt like hardened sandals, though they were unlike anything he had encountered. Had he been captured? This felt too bizarre for a prison.
+
+His hand went automatically to the place where his katana should be. Nothing. The familiar weight, the comforting feel of his family's blade – gone. Panic began to niggle at the edges of his focus. He was vulnerable without a weapon and the tools of his trade. He was exposed. For the first time in his life, Kenzo felt a tremor of fear.
+
+He did a quick check of his person. As he turned over his palms, he noticed something strange – a small metallic object, no bigger than a coin, lay nestled in his hand. It was cool to the touch, humming with a subtle internal energy, and seemed to have a small, blinking light. He had no memory of acquiring it. He pressed the face of the coin, and a small blue light flashed, and a series of symbols appeared on the surface of the device. He couldn’t understand a single character. He dropped the coin in frustration into the pocket of his grey clothing.
+
+With nowhere else to go, he focused on his senses, trying to find some anchor in this strange new world. He tried to mimic how to move with quiet as his old sensei had taught him. His old training paid off, and he found he could still move without creating noise. He moved with the silent grace of a shadow away from the hard platform, finding himself on a street made of a grey material he could not identify, that seemed to stretch as far as he could see, in both directions. He began to walk cautiously, keeping close to the bases of the towering structures, trying to stay out of sight. People, or rather, beings that resembled people, passed him by. They were dressed in strange, often brightly colored, clothing. Many of them carried small, flat objects that they stared into intently, ignoring the world around them. Some seemed to pass through the street as though they were invisible.
+
+This wasn’t Japan. This was like no place he had ever heard of.
+
+Days turned into a blurred cycle of observation, marked by the ever-changing colours of the sky. Kenzo learned quickly how to move through this strange world unnoticed, using the same skills of stealth and observation that his ninja training had etched into his very being. He survived by consuming strange, pre-packaged foods he found discarded in refuse bins, foods that tasted of chemicals and left a strange aftertaste. Food he would despise in his time but now felt like a luxury. He took shelter in hidden alleyways and under the overhangs of enormous buildings.
+
+He listened to the sounds of the people around him, slowly unlocking the patterns of their language, the slang and the jargon. He learned of “the net," a vast communication network of interconnected devices and that the year was 2066\. He had traveled more than four hundred years into the future. The thought left him light headed and strangely numb.
+
+One day, as he was observing the intricate dance of people moving through, as he now knew, an 'intersection,' he noticed a young woman sitting slumped against the wall of a cafe. She wasn’t like the others. Her clothing, though still modern, was composed of natural fibres, and she moved with a weariness that suggested experience. Unlike many of the people he saw, she seemed to see the world with actual eyes. She wasn’t just focused on a handheld screen. His ninja senses told him that there was something different about her, some spark or strength buried beneath her apparent exhaustion.
+
+He approached her hesitantly, speaking the few fragments of the future language he had pieced together. “You ok?” he asked, his accent thick and awkward.
+
+The woman looked up, her eyes widening in surprise. She was younger than he had initially thought, late twenties at most, her face etched with more than her years. Her hair was a mass of fiery red, braided tightly, and she was carrying a large leather bag slung over her shoulder. “Whoa,” she said, her voice a little husky. “Where’d you come from? You got that old-world vibe going on.”
+
+Kenzo didn’t know what she meant, but he could sense that she wasn’t hostile. He had to take the risk. "My name Kenzo." He pointed at himself.
+
+“I’m Anya,” she said, and then gave him a half smile. “What’s with the get up? You look like something out of a museum.”
+
+He tried to explain, stumbling over the words, about the bright light, the strange pulling sensation, and the world he had left behind. He showed her the small metal coin he had found. She listened to him, her brow furrowed with concentration, skepticism warring with curiosity in her eyes, and then she burst out laughing.
+
+“Time travel? Seriously? Dude, that's like something out of a bad flick,” she said, shaking her head. “And that thing? You sure it’s not just a broken, old data chip?”
+
+He couldn’t blame her for not believing him. He thought it was crazy even as he said the words. “No," he said, his voice desperate. "I did not choose to come here."
+
+She looked up at him, her laugh having subsided. She could see something in his eyes, an earnestness that suggested he wasn't lying, and sighed. “Okay, okay. Let's say you're telling the truth,” she said, her voice tinged with a weariness that belied her youth. “You're from the past. The prehistoric times or some such. Which makes you just about the strangest thing I have seen on the streets. What are you going to do?”
+
+He had no idea; all his training, all his skills, everything had become useless. With a low sigh, he said, “I don’t know.”
+
+Anya eyed him sceptically. “Look, I can’t deny you’re odd, but you also look starved. Got nowhere to go, right?” Kenzo nodded. “I guess I can give you something to eat and at least not let you starve on the streets. I’ve got a… place you can crash if you don’t mind things being rough.”
+
+Kenzo agreed, thinking he had nothing else to lose.
+
+Anya led him through the labyrinthine streets, a sharp contrast to the smooth, ordered avenues. They made their way to a hidden district of the city, a place of decaying buildings and faded grandeur that felt like an echo of a forgotten past. Here, the air smelled of incense and something that Anya called “re-cycled” oil. It was a place of shadows, familiar to Kenzo, and he felt a slight lessening of the unease that had consumed him.
+
+Anya’s “place”, as she called it, was on the third floor of a run-down building. It was small and cramped but filled with a peculiar charm. Ancient books were stacked in corners, their pages brittle with age, alongside strange, almost arcane devices. He was used to a life with no personal possessions, so even the small space felt luxurious.
+
+As the days turned into weeks, Kenzo began to slowly piece together his surroundings, working with Anya to discover the true nature of her world. Anya was a “preservationist” – a rebel, in many respects, fighting against the increasingly digital and sterile world of 2066\. She dedicated herself to preserving the remnants of the past, the physical things that had long been replaced by digital simulations. She saw some connection with the nature Kenzo spoke of and the nature she prized.
+
+She and her small group managed to scavenge old books, maps, and even pieces of antique machinery. For this, she was regarded as a 'strange' old soul.
+
+Kenzo, for his part, struggled to come to terms with his new reality. The technology of 2066 boggled his mind; the constant hum of the network, the self-propelled vehicles, the floating holographic images, all felt like something ripped from a sorcerer's tale. Yet, bit-by-bit, he adapted. He learned to use the language more fluently, though his accent remained a source of amusement for Anya and her friends. He discovered the internet, marveling at the almost limitless amount of information available, and the sheer level of interconnectedness it created.
+
+While he adapted to this new technology, in true ninja spirit, he became a keen student. He learned to observe the people, their ways of communication, thinking, and interacting. He realised that in this world of constant connection, most citizens had lost the art of truly seeing. He saw that screens had become the thing that kept them all apart.
+
+He started training again, working to maintain his body. He practiced his stealth movements in Anya's dilapidated building, using abandoned furniture as targets. The quiet click of his soft feet was still as silent as a shadow, though without his sword, he felt ill-equipped.
+
+One day, Anya showed him the meaning of the symbol on the coin – It was the sigil of the "Temporal Resonators," a shadowy organization rumored to be experimenting with time travel. Anya had been reading about the organization for a long time and had begun to believe that their research was not contained at one location, but a network of clandestine labs throughout the city. She theorised that he had been caught in their temporal web, somehow transported across time. She mentioned the possible implications for the timeline and the ramifications that his presence might hold. Kenzo didn’t understand half of what she said, but he recognised the danger of this group to people of the past.
+
+Kenzo felt a surge of purpose. He was no longer just a refugee in this strange world. He had stumbled onto something much bigger than himself. He would somehow find a way to return to his own time, not only to reclaim his life but also to ensure these temporal disruptors didn't destroy the flow of time.
+
+Anya saw the fire ignite in Kenzo’s eyes. She knew he was more than what he seemed, that his old-world ways might help save hers. She had watched him adapt and train with an unspoken intensity and determination that she had not seen in any person in her time. Her group was too small to challenge the temporal corporation, and she had seen how they worked. She knew better than to go against the temporal group with just the members of her rag-tag band, but Kenzo moved differently, with stealth and confidence.
+
+They spent weeks planning, learning all they could about the Temporal Resonators, their network of facilities, and the technologies they employed. They discovered that their central lab was beneath the 'Neo Commerce Center,' one of the grand towering structures that marked the city's skyline. For Kenzo, it marked a point on the map, a place he had to get to, and Anya, a person worth protecting.
+
+Anya’s friends, though not trained fighters, were incredibly skilled with technology. They provided Kenzo with a series of modifications to his clothing to act as a shield and an invisibility screen that he could control manually. They did manage to scavenge a replacement for his sword, not a beautifully crafted Katana, but a simple high-tech blade, forged out of a hardened alloy. It wasn't the same, but it seemed to have the feeling of a weapon.
+
+Finally, the night arrived when Kenzo was ready to infiltrate their lab. He donned the updated clothing, the gray material now shimmering with a low internal light. Anya had her group working away, monitoring his progress. He adjusted the new sword, and the sensation left him with a cold feeling in his gut. It was time to move.
+
+He knew he could not enter by the main structure, as that was heavily monitored by a security network, but they had overlooked the old maintenance access tunnels that ran through most of the city’s old structures. His training in infiltration made the journey easy. He was a shadow, moving in the city's hidden spaces, a ghost passing through the walls unseen and unheard.
+
+He arrived at the base of the Neo Commerce Center’s subterranean base, his senses telling him two security guards were on patrol nearby. He moved with liquid caution, the stealth movements his ancestors had taught him coming to the fore. He quickly neutralised both guards, securing their datapads, a piece of equipment that Anya had shown him how to use. These would grant him limited access to the lab’s inner systems.
+
+After a few minutes of tapping away on the datapad, the internal doors opened with a hiss, releasing a puff of cold air and the scent of chemicals. The subtle hum of machinery grew stronger. He was in the belly of the beast.
+
+He moved through the corridors, his vision enhanced by the advanced lenses that Anya’s friends had crafted for him. He could see the network that connected the internal systems through the walls. He felt like a fish in an artificial river. He carefully evaded the patrollers, knowing that if he was captured, that would end his mission and possibly Anya.Knowing capture would jeopardize both his mission and Anya's life, he cautiously avoided the patrollers. He had come too far to give up.
+
+He reached a large chamber at the centre of the facility. It was dominated by a huge device, humming with power, with a complex lattice of metal and energy coils. This was without doubt the device that had ripped him from his own time, the temporal device he had been searching for. Surrounding the machine were several consoles with lab technicians monitoring their screens.
+
+Kenzo decided he needed to act swiftly and silently. This, now, was not about protecting the timeline, but about his own survival, and those who had helped him, who believed in him. He activated part of his hidden shield system to make sure his movements were not picked up by their cameras, and activated his invisibility screen. He moved with a speed and precision that was blurred to those who were in the chamber; invisible.
+
+He cut the power line connecting the centre console of the device and the hum subsided quickly. Several technicians panicked and started to shout in confusion. That was the moment he struck. He took out the technicians one by one, not lethally, but with a precision that put them out of action. He knew they were mostly just employees with little knowledge of the temporal machine.
+
+Then, a figure stepped out from the shadows. He was slightly older, but his outfit's crisp, clean look told Kenzo he was no normal technician. This must be the head, he thought, the master of this machine. “Impressive,” the figure said, his voice a smooth drawl. “You moved through my security with an ease I haven’t seen before. I figured I should see who surprised our little system.” His calm demeanour was unsettling, and Kenzo felt his focus narrow.
+
+“You are using the past as a plaything,” Kenzo said, his voice low and firm in the future language. The man laughed, a cold, humourless sound.
+
+“The past? The past is simply a resource like any other. We are simply harvesting it. What’s it to you?” the man sneered.
+
+Kenzo saw their casual disregard for the immense power that they controlled and realized that their intentions might be far worse than he imagined. “I have lived in the past. It is not for you to break,” he proclaimed.
+
+“You? A relic of times gone by speaking about what is right?” The man laughed. “I think I’ll leave you in the past. Perhaps trapped in a loop. What do you say?” The man then reached towards a console.
+
+Kenzo knew that he could not allow the man to operate the machine, as whatever he did would never benefit the flow of time. He moved with a speed that the man could not fathom and disarmed the man's access to the device. They both drew their weapons. The man had a small electronic lance, and Kenzo had his blade.
+
+They moved like dancers, a dance of the old and the new. The fight was like nothing Kenzo had ever experienced; the other man was much faster and had a reach that his blade could not match, but Kenzo's training, his experience, and his agility compensated for the technology he could not compete with. Kenzo moved in the shadows, drawing from the teachings of the great masters, moving with a swift, almost unseen grace, using the shadows themselves as his ally. The man lunged with his lance, and Kenzo dodged, his blade cutting through a small part of the other man’s clothing, burning through the material with a hiss.
+
+As they sparred, Kenzo saw his opportunity. He channeled his energy, focusing on the weak moment in the other man's attacks. With a calculated flip, he positioned himself behind the man, the honed edge of his blade at the base of his neck, severing the access point.
+
+The man froze abruptly, falling to the ground, the device in his hand now dark.
+
+Kenzo stood there, his chest heaving, the taste of adrenaline in his mouth. He had stopped them and saved Anya and the people of the past. But a new question entered his mind. How could he go home?
+
+He decided he must use the device to see if he could somehow use it to return to his own time. But once he entered the chamber where the temporal mechanism was housed, a red alarm started to sound, and a number of armed security guards began to enter the chamber and started to surround Kenzo. He realised that he had been using one of the temporal units, and the rest of the network had been alerted. He decided not to engage with the guards knowing, that to do so, might risk his chance to return home. He moved with quick speed, and dodged out through the door.
+
+As the guards streamed in, he ran as quickly as he could through the corridors. He had to work fast, he knew that, with the security network alerted, he had a small window where they would anticipate his next movements, but not be able to pin his current location. As he ran, he adjusted his personal shield and moved silently through the underground systems. He had to make for the machine room. With the man removed, he figured he might be able to work out how to control the device.
+
+Kenzo made it to the chamber with the main temporal generator and quickly started to work, using the data pad he had taken from the guard to gain some level of access. He worked fast. He could hear the security guards searching through the tunnels, and he knew they would find him if he did not act quickly. With his ninja skill in observation, he was able to quickly discern which of the panels to enter.
+
+Kenzo inputs the coordinates into the machine, though he has little knowledge of what would be the result of his actions.
+
+The device suddenly lit up, and it started to hum at a level that he had never previously experienced. A bright light and a strong ripping sensation filled the chamber. He hoped that the device would take him back home, but he had little to no idea what the final outcome might be. He clung to all his training and hoped for the best.
+
+Back at Anya's base, it seemed that all the monitors had gone offline. Her group began to fret, trying to see exactly what had caused the interference, and Anya sat quietly, a sense of despair rising. She had known Kenzo might not return, but she wanted him to be safe.
+
+With trembling hands, Anya went outside, into the dark, empty streets. She looked up at the stars. She felt she knew Kenzo so well, but she knew so little and wondered what the ninja might be doing.
+
+The light suddenly subsided, and Kenzo found himself lying on damp grass. The smell of pine hit him hard, and he took a deep gasp of familiar air. He could see through the thick woods. He was home. He slowly got to his feet and walked, with a newfound confidence, into the forest.
+
+He could hear the familiar song of the nightingale and the soft whistle of wind in the trees. He took a deep breath and felt the sense of relief that he had made it home. But with the feeling of relief also came the sense of his own internal change. He was not the same young ninja who had left on a mission all those weeks ago. Now, he had seen a glimpse into a strange and surreal future. His mind had been opened with the understanding that the past and future were not as disconnected as they might seem, and that temporal disruption, could wreak havoc on the natural world.  
+He knew that his mission was not over. He would have to find a way to protect the past and those it held. He vowed not to let the temporal resonators work their dark magic again.  
+Kenzo thought back to Anya and, with a small smile, started to walk towards his village. He had to return home and take up the mantle of the warrior once again. But now, his mission was to protect his world.

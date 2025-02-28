@@ -1,0 +1,31 @@
+---
+import AdBanner from '../ads/AdBanner.astro';
+import AffiliateLink from '../ads/AffiliateLink.astro';
+
+const affiliateProducts = [
+  {
+    title: "Writer's Essential Kit",
+    description: "Everything you need to start your writing journey",
+    imageUrl: "https://images.unsplash.com/photo-1455390582262-044cdead277a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&h=300&w=400",
+    link: "#"
+  },
+  {
+    title: "Premium Writing Course",
+    description: "Master the art of storytelling",
+    imageUrl: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&h=300&w=400",
+    link: "#"
+  }
+];
+---
+<aside class="w-full lg:w-80 space-y-8">
+  <AdBanner slot="sidebar-top" />
+  
+  <div class="bg-gray-50 rounded-lg p-6">
+    <h2 class="text-xl font-semibold mb-4">Recommended Products</h2>
+    {affiliateProducts.map(product => (
+      <AffiliateLink {...product} />
+    ))}
+  </div>
+  
+  <AdBanner slot="sidebar-bottom" />
+</aside>

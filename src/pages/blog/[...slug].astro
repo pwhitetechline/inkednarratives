@@ -1,0 +1,42 @@
+---
+import PageWithSidebar from '../../layouts/PageWithSidebar.astro';
+import Banner from '../../components/Banner.astro';
+import { getCollection } from 'astro:content';
+import { formatDate } from '../../utils/date';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<PageWithSidebar title={`${post.data.title} - StoryBlog`}>
+  <Banner />
+  
+  <article class="prose lg:prose-xl mx-auto">
+    <img 
+      src={post.data.image} 
+      alt={post.data.title}
+      class="w-full h-[400px] object-cover rounded-lg mb-8"
+    />
+    
+    <h1 class="text-4xl font-serif font-bold text-gray-900 mb-4">
+      {post.data.title}
+    </h1>
+    
+    <div class="flex items-center text-gray-500 mb-8">
+      <span class="mr-4">{post.data.author}</span>
+      <time datetime={post.data.date}>{formatDate(post.data.date)}</time>
+    </div>
+    
+    <div class="text-gray-700">
+      <Content />
+    </div>
+  </article>
+</PageWithSidebar>

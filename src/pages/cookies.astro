@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const lastUpdated = "September 15, 2023";
+---
+
+<Layout title="Cookie Policy - StoryBlog">
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <article class="prose lg:prose-xl">
+      <h1 class="text-4xl font-serif font-bold text-purple-900 mb-4">Cookie Policy</h1>
+      <p class="text-sm text-purple-600 mb-8">Last updated: {lastUpdated}</p>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-purple-900 mb-4">What Are Cookies</h2>
+        <p>
+          Cookies are small text files that are placed on your computer or mobile device when 
+          you visit our website. They are widely used to make websites work more efficiently 
+          and provide a better browsing experience.
+        </p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-purple-900 mb-4">How We Use Cookies</h2>
+        <p>We use cookies for the following purposes:</p>
+        <ul>
+          <li>
+            <strong>Essential Cookies:</strong> Required for basic site functionality
+          </li>
+          <li>
+            <strong>Preference Cookies:</strong> Remember your settings and preferences
+          </li>
+          <li>
+            <strong>Analytics Cookies:</strong> Help us understand how visitors use our site
+          </li>
+          <li>
+            <strong>Marketing Cookies:</strong> Track your browsing habits to deliver targeted advertising
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-purple-900 mb-4">Managing Cookies</h2>
+        <p>
+          Most web browsers allow you to control cookies through their settings preferences. 
+          However, limiting cookies may impact your experience of our website.
+        </p>
+        <p class="mt-4">
+          To manage cookies in your browser:
+        </p>
+        <ul>
+          <li>Chrome: Settings → Privacy and Security → Cookies</li>
+          <li>Firefox: Options → Privacy & Security → Cookies</li>
+          <li>Safari: Preferences → Privacy → Cookies</li>
+          <li>Edge: Settings → Privacy & Security → Cookies</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-purple-900 mb-4">Contact Us</h2>
+        <p>
+          If you have questions about our use of cookies, please contact us at:
+          <a href="mailto:privacy@storyblog.com" class="text-purple-600 hover:text-purple-900">
+            privacy@storyblog.com
+          </a>
+        </p>
+      </section>
+    </article>
+  </main>
+</Layout>
