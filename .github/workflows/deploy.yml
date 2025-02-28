@@ -36,4 +36,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
           local-dir: ./dist/
-          server-dir: ${{ secrets.REMOTE_PATH }}
+          server-dir: ./inkednarratives.com/
